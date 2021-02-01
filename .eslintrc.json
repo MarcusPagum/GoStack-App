@@ -31,17 +31,20 @@
     "rules": {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
+      "react/prop-types": "off", //Incluido por minha conta pois dava falha mesmo com as interfaces criadas
+      "react/jsx-props-no-spreading": "off",
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/prefer-default-export": "off",
       "no-unused-expressions": "off",
       "no-use-before-define": "off",
       "prettier/prettier": "error",
+      "@typescript-eslint/ban-types": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
         {
-          "ts": "never",
-          "tsx": "never"
+          "tsx": "never",
+          "ts": "never"
         }
       ]
     },
